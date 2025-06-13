@@ -1,27 +1,33 @@
 console.log('Welcome to Rock, Paper, Scissors!')
 
-let playerChoice = prompt('Please choose rock, paper, or scissors.');
-
-let cleanChoice = playerChoice.toLowerCase();
-
-console.log(`You chose ${cleanChoice}!`);
+function getHumanChoice() {
+    let humanChoice = prompt("Please choose rock, paper, or scissors.");
+    humanChoice = humanChoice.toLowerCase();
+    console.log(`You chose ${humanChoice}!`);
+    return humanChoice;
+}
 
 function getComputerChoice() {
     const number = Math.floor(Math.random() * 3) + 1;
 
-    let choice;
+    let computerChoice;
     if (number === 1) {
-        choice = "rock";
+        computerChoice = "rock";
     } else if (number === 2) {
-        choice = "paper";
+        computerChoice = "paper";
     } else if (number === 3) {
-        choice = "scissors";
+        computerChoice = "scissors";
     }
 
-    console.log(`Computer chooses ${choice}!`);
+    console.log(`Computer chooses ${computerChoice}!`);
+    return computerChoice;
 }
 
-getComputerChoice();
+
+
+
+
+
 
 
 
