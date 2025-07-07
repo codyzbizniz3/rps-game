@@ -1,10 +1,7 @@
 console.log('Welcome to Rock, Paper, Scissors!')
 
 function getHumanChoice() {
-    let humanChoice = prompt("Please choose rock, paper, or scissors.");
-    humanChoice = humanChoice.toLowerCase();
 
-    return humanChoice;
 }
 
 function getComputerChoice() {
